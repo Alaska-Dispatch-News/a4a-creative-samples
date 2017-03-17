@@ -23,7 +23,7 @@ It must also include the `amp4ads-boilerplate` inline style.
 <style amp4ads-boilerplate>body{visibility:hidden}</style>
 ```
 
-If you want to include your own custom CSS you need to add another style tag with the `amp-custom` attribute. You link to a stylesheet. If you use something like [Sass](http://sass-lang.com/) in your workflow there are a number of taskrunner scripts for services such as Gulp and Grunt which will handle the process of building the stylesheet and adding it to your header. All custom styles cannot exceed 50kb.
+If you want to include your own custom CSS you need to add another style tag with the `amp-custom` attribute. You cannot link to a stylesheet. If you use something like [Sass](http://sass-lang.com/) in your workflow there are a number of taskrunners such as [Gulp](http://gulpjs.com/) and [Grunt](https://gruntjs.com/) which will handle the process of building the stylesheet and adding it to your header. All custom styles cannot exceed 20,000 bytes. 
 
 ```
 <style amp-custom>
@@ -60,7 +60,7 @@ Here's an example of a simple 300x250 creative.
 ```
 
 ## Validation
-All AMP4ADS creative must pass the AMP validation. The Google [validator tool can be found here](https://validator.ampproject.org/). You must select the `AMP4ADS` option from the dropdown as there are different validation rules for creatives.
+All AMP4ADS creatives must pass the AMP validation. The Google [validator tool can be found here](https://validator.ampproject.org/). You must select the `AMP4ADS` option from the dropdown as there are different validation rules for creatives.
 
 ## Moving Forward
 The AMP4ADS spec is a new platform and there's likely to be changes going forward. Below are some pieces of official documentation which you can read to get up to speed with the evolution of it.
