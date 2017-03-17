@@ -1,0 +1,53 @@
+<!doctype html>
+<html amp4ads lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/amp4ads-v0.js"></script>
+
+    <!-- Extended AMP Componnets (More details here: https://ampbyexample.com/) -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+    <!-- AMP4ADS Boilerplate -->
+    <style amp4ads-boilerplate>body{visibility:hidden}</style>
+
+    <title>Banner Example</title>
+  </head>
+
+  <body>
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-5429000099-1"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          },
+          "trackAnchorClicks": {
+            "on": "click",
+            "selector": "a",
+            "request": "event",
+            "vars": {
+              "eventId": "42",
+              "eventLabel": "clicked on a link"
+            }
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+    
+    <!-- Uses the amp-img component (included by default) to display a banner ad -->
+    <a target="_blank"
+      href="https://ampbyexample.com/amp_for_ads_a4a/a4a_banner_ad/">
+      <amp-img src="assets/images/frame.jpg"
+        width="300"
+        height="250"
+        alt="Advert Description">
+      </amp-img>
+    </a>
+  </body>
+</html>
